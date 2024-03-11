@@ -3,7 +3,7 @@
 ## GROUP <add-group-name>
 
 - Member 1: Vũ Thị Thảo
-- Member 2: <qadd-name>
+- Member 2: <add-name>
 - Member 3: <add-name>
 - Member 4: <add-name>
 
