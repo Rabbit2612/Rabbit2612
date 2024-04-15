@@ -1,0 +1,41 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Task</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to tasks_path, class: button_class(theme: "transparent") do %>
+      All Tasks
+      <% end %>
+      <%= link_to edit_task_path(@task), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Title:</p>
+        <p><%= @task.title %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Description:</p>
+        <p><%= @task.description %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Due date:</p>
+        <p><%= @task.due_date %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Priority:</p>
+        <p><%= @task.priority %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Status:</p>
+        <p><%= @task.status %></p>
+      </li>
+      <li>
+        <p class="font-semibold">User:</p>
+        <p><%= @task.user %></p>
+      </li>
+  </ul>
+</div>
