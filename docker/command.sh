@@ -9,7 +9,7 @@ bundle exec yarn install --check-files
 
 rails db:prepare
 
-#rails db:migrate
+rails db:migrate
 
 #rails assets:precompile
 
