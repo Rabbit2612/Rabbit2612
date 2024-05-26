@@ -3,10 +3,13 @@
 ## GROUP <add-group-name>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Member 1: Vũ Thị Thảo
 - Member 2: Phạm Thị Thu Hà
 - Member 3: Đặng Lê Kim Chi
 =======
+=======
+>>>>>>> parent of c5f19dc (edit README)
 - Member 1: <add-name>
 - Member 2: <add-name>
 - Member 3: <add-name>
