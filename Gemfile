@@ -77,3 +77,7 @@ gem "sassc-rails"
 
 gem 'pg', '1.3.5'
 gem "dotenv-rails"
+
+gem "rails", "~> 7.0.4", ">= 7.0.4.2"
+gem 'rails_admin'
+gem "sassc-rails"
