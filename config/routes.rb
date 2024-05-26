@@ -1,6 +1,12 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  resources :customers
+  resources :books
+  resources :publishers
+  resources :authors
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  resources :subjects
   authenticate :user, ->(u) { u.admin? } do
     mount Sidekiq::Web => '/sidekiq'
   end
@@ -11,8 +17,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
-
-  resources :books
-  resources :subjects
 
 end

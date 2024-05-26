@@ -14,12 +14,13 @@ class BooksTest < ApplicationSystemTestCase
     visit books_url
     click_on "New book"
 
-    fill_in "Author", with: @book.author
-    check "Avaibale" if @book.avaibale
-    fill_in "Borrowed at", with: @book.borrowed_at
-    fill_in "Subject", with: @book.subject_id
+    fill_in "Isbn", with: @book.ISBN
+    fill_in "Author", with: @book.author_id
+    fill_in "Gener", with: @book.gener
+    fill_in "Price", with: @book.price
+    fill_in "Publisher", with: @book.publisher_id
+    fill_in "Stock quantity", with: @book.stock_quantity
     fill_in "Title", with: @book.title
-    fill_in "Year", with: @book.year
     click_on "Create Book"
 
     assert_text "Book was successfully created"
@@ -30,12 +31,13 @@ class BooksTest < ApplicationSystemTestCase
     visit book_url(@book)
     click_on "Edit this book", match: :first
 
-    fill_in "Author", with: @book.author
-    check "Avaibale" if @book.avaibale
-    fill_in "Borrowed at", with: @book.borrowed_at
-    fill_in "Subject", with: @book.subject_id
+    fill_in "Isbn", with: @book.ISBN
+    fill_in "Author", with: @book.author_id
+    fill_in "Gener", with: @book.gener
+    fill_in "Price", with: @book.price
+    fill_in "Publisher", with: @book.publisher_id
+    fill_in "Stock quantity", with: @book.stock_quantity
     fill_in "Title", with: @book.title
-    fill_in "Year", with: @book.year
     click_on "Update Book"
 
     assert_text "Book was successfully updated"

@@ -16,24 +16,28 @@
           <%= form.text_field :title, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :author, class: label_class %>
-          <%= form.text_field :author, class: input_class %>
+        <%= form.label :author_id, class: label_class %>
+          <%= form.text_field :author_id, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :year, class: label_class %>
-          <%= form.number_field :year, class: input_class %>
+        <%= form.label :gener, class: label_class %>
+          <%= form.text_field :gener, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :borrowed_at, class: label_class %>
-          <%= form.datetime_field :borrowed_at, class: input_class %>
+        <%= form.label :ISBN, class: label_class %>
+          <%= form.text_field :ISBN, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :avaibale, class: label_class %>
-          <%= form.check_box :avaibale, class: input_class %>
+        <%= form.label :publisher_id, class: label_class %>
+          <%= form.text_field :publisher_id, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :subject_id, class: label_class %>
-          <%= form.text_field :subject_id, class: input_class %>
+        <%= form.label :price, class: label_class %>
+          <%= form.text_field :price, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :stock_quantity, class: label_class %>
+          <%= form.number_field :stock_quantity, class: input_class %>
       </div>
 
 <%= form.submit class: button_class(theme: 'primary') %>

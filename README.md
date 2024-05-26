@@ -2,9 +2,15 @@
 
 ## GROUP <add-group-name>
 
+<<<<<<< HEAD
 - Member 1: Vũ Thị Thảo
+- Member 2: Phạm Thị Thu Hà
+- Member 3: Đặng Lê Kim Chi
+=======
+- Member 1: <add-name>
 - Member 2: <add-name>
 - Member 3: <add-name>
+>>>>>>> parent of c5f19dc (edit README)
 - Member 4: <add-name>
 
 ## Starting server
